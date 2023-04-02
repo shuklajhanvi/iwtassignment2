@@ -1,0 +1,46 @@
+.container
+{
+    border:solid red 2px;
+    height:800px;
+    width:800px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    /*justify-content: space-around;*/
+    align-items:space-evenly;
+    background-color: darkolivegreen;
+}
+
+.container > div 
+{
+    border:solid rgb(14,13,13) 2px;
+    height:200px;
+    width:200px;
+    background-color:dimgrey;
+    color: white;
+    font-size: 50px;
+    display:flex;
+    align-items:center;
+    animation-name: animateOne;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.container > div:hover
+{
+    background-color:indianred;
+    color:darkslateblue;
+    transform:rotate(360deg) scale(1.2)  translateY(100px);   /*scale size increase krne k liye*/
+    transition:2s;
+
+}
+.container img{
+ height:200px;
+    width:200px;
+object_fit:cover;
+     
+
+}

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>the number is</title>
+<script>
+
+var number = NewValue();
+
+function NewValue(){
+return Math.floor(1000*Math.random())+1;
+}
+
+function guess()
+{
+
+if (parseInt(document.getElementById("numb").value) > number)
+{
+alert("Too high\n\nTry again.");
+}
+else if (parseInt(document.getElementById("numb").value) < number)
+{
+alert("Too low Try again.");
+}
+else
+{
+alert("Congratulations   number matched");
+
+}
+document.getElementById("numb").value = "";
+
+}
+</script>
+</head>
+<body>
+<h2>type the number in range 1-1000</h2>
+<br>
+<div id="h">
+ <input type="number" id="numb" value="" ><br/><br>
+<button onclick="guess()">ok</button>
+</div>
+</body>
+</html>
+</body>

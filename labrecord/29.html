@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+<title>
+</title>
+
+</head>
+<body>
+<div id="h" style="font-size:5pt; color:red;"> TEXTGROWING </div>
+
+<script>
+sz=5;
+a=setInterval(on,100);
+x=document.getElementById("h")
+function on()
+{ 
+sz += 1
+
+
+x.style.fontSize=sz+'pt';
+
+if(sz==50)
+{
+clearInterval(a);
+
+x.innerHTML="TEXTDECREASING"
+x.style.color="blue"
+b=setInterval(off,100);
+
+}
+}
+function off()
+{ 
+sz -= 1
+
+x.style.fontSize=sz+'pt';
+
+
+if(sz==5)
+{
+clearInterval(b);
+
+x.innerHTML="TEXTGROWING"
+x.style.color="red"
+a=setInterval(on,100);
+}}
+
+</script>
+</body>
